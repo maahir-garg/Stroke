@@ -1,11 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-The camera view shows the feed from the camera, and renders the points
-     returned from VNDetectHumanHandpose observations.
-*/
-
 import UIKit
 import AVFoundation
 
