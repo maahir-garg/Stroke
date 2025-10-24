@@ -109,13 +109,12 @@ class CameraViewController: UIViewController {
     }
 
     private func applyDeviceOrientationRestrictions() {
-        // If running on iPhone, restrict to back camera only and hide flip control.
         if UIDevice.current.userInterfaceIdiom == .phone {
-            // force back camera
             currentCameraPosition = .back
-            switchCameraButton.isHidden = true
+            switchCameraButton.isHidden = false
         } else {
             // iPad: allow flip
+            currentCameraPosition = .back
             switchCameraButton.isHidden = false
         }
         // Immediately enforce allowed orientation/camera
@@ -134,6 +133,7 @@ class CameraViewController: UIViewController {
                 currentCameraPosition = .back
             } else {
                 // iPad: require landscape
+                currentCameraPosition = .front
                 allowed = io.isLandscape
             }
         } else {
