@@ -40,14 +40,6 @@ Tip: To iterate quickly, build for a device running iOS 13+ so the app can acces
 3. `HandGestureProcessor` maps landmark points to screen coordinates, smooths movement, and emits stroke start/continue/end events.
 4. The UI layer draws strokes in response to those events.
 
-## Contributing
-This project is intended as a small sample/demonstration. Feel free to open issues or PRs to:
-- Improve smoothing or gesture recognition.
-- Add multi-touch / multi-hand support.
-- Add persistence (save/load drawings), or export to image/PDF.
-
-When contributing, keep changes limited and add a short note in the PR describing the intent.
-
 ## License
 This project is released under the MIT License — see `LICENSE.txt` for details.
 
